@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="tpblogd.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"/>
+    <title>Think Plus Creative Blog Page</title>
+</head>
+<body>
+   
+	
+		<div class="tp__img">
+			<img src="thinkplus logo.png" alt="Think Plus Logo" height="120px" width="120px" />
+		</div>
+    <nav>
+		<div class="tp__nalink">
+			<ul>
+			<li><a class="nrq" href="contact.html">Request Quote/Contact</a></li>
+			<li><a href="blogs.html">Blog</a></li>
+			<li><a href="pricing.html">Pricing</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="about.html">About us</a></li>
+			<li><a href="home.html">Home</a></li>
+		    </ul>
+		</div>
+	</nav>
+
+    <section>
+        <div class="rq__name">
+            <img src="rq1.png" alt="request quote" />
+        </div>
+    </section>
+
+    <section>
+        <h2 class="rq__name1">Request free consultation</h2>
+        <div>
+            <div class="container_rq">
+                <form class="container__rqmidd"action="" method="post" >
+                    <fieldset>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your Email..">
+                
+                
+                    <label for="subject">Your message (Optinal)</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                
+                    <input class="for__sub" type="submit" value="Submit">
+                  </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <div id="map"></div>
+
+    <script>
+         function initMap() {
+             var location = {lat: 17.424339, lng: 78.401527};
+             var map = new google.maps.Map(document.getElementById("map"), {
+                 zoom: 6,
+                 center: location
+             });
+             var marker = new google.maps.Marker({
+                 position: location,
+                 map: map
+
+             });
+
+         }
+         
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCb2sHFzMBgjKK1HMjcrfv5MPh30uWjTs&callback=initMap"></script>
+
+    <section>
+        <div>
+            <h2 class="rq__name3">Get In Touch</h2>
+        </div>
+        <div class="rq__subname3">
+            <h4>Reach Us</h4>
+            <h4>Address:5th Floor, TV5 News Building,<br>
+                Jubilee hills, Road No 1,<br>
+                Hyderabad - 500033</h4>
+            <h4>Contact: +91 9133 60 60 60</h4>
+            <h4></h4>
+        </div>
+    </section>
+
+    <!--<section>
+        <div>
+            <div id="googleMap" style="width:400px;height:400px;">myMap(17.3850,78.4867)</div>
+        </div>
+    </section>
+
+         <script>
+         function myMap() {
+         var mapProp= {
+         center:new google.maps.LatLng(17.3850,78.4867),
+         zoom:5,
+         };
+         var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+         }
+         </script>
+
+         <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>-->
+     
+
+         <section class="foo">
+            <footer class="foott__container">
+              <div class="container">
+                  <div class="row row-cols-4 foot">
+                    <div class="col ">
+                        <img class="foot__left"src="logo-2.png" alt="Think plus img" />
+                      </div>
+                    <div class="col">
+                        <h2 class="foot__middle">Company</h2>
+                        <div class="foot__submiddle">
+                        <h5>Home<br></h5>
+                        <h5>About<br></h5>
+                        <h5>Services<br></h5>
+                        <h5>Contact</a></h5>
+                        </div>
+                      </div>
+                    <div class="col">
+                        <h2 class="foot__mid">Business</h2>
+                        <div class="foot__submid">
+                        <h5>Project</h5>
+                        <h5>Our Team</h5>
+                        <h5>Facts</h5>
+                        <h5>Customers</h5>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <h2 class="foot__right">Address</h2>
+                        <h4 class="foot__sub1">
+                          Location: 5th Floor, TV5 News Building,
+                          Jubilee hills, Road No 1,
+                          Hyderabad - 500033
+                        </h4>
+                        <h4 class="foot__sub1">Contact: 
+                            +91 9133 60 60 60</h4>
+                      </div>
+                  </div>
+                  <hr>
+                </div>
+                
+            </footer>
+            
+          <hr class="last__line">
+          <h6 class="endd" href="#">Copyright © 2021 Think Plus Creative  Powered by Think Plus Creative</h6>
+          </section>
+
+</body>
+</html>
